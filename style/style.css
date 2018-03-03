@@ -1,0 +1,15 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:rgba(133, 106, 233, 0.952)
+}
+#content{
+    max-width:1028px;
+    margin:auto;
+}
+#disclaimer{
+    text-align: center;
+    padding-top:30px;
+    max-width:500px;
+    margin:auto;
+}
