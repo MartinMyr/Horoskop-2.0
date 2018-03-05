@@ -1,7 +1,10 @@
 <?php
+    if(isset($_COOKIE["disclaimer"])){
+        header('location: index.php');
+    }
+
     include 'function/function.php';
     include 'include/header.php';
-   
 ?>
 
     <div id = "disclaimer">
@@ -12,7 +15,7 @@
             is owned and operated by Behaviometrics AB (“us”, “we”, “our”).
         </p>
 
-        <form method = "get">
+        <form action= "index.php" method = "post">
            <h4> I hereby agree to the Terms & Conditions
                 <input id="checkBox" type="checkbox" name = "chkBox" value = true>   </br></br>
                 <button type = "submit" action = "index.php">Accept</button>
@@ -24,10 +27,7 @@
 
     </div>
 
-
-
-
-
+   
 
 <?php
     include 'include/footer.php';
